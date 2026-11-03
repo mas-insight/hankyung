@@ -1,6 +1,6 @@
-# Người khai phá – Hankyung Business 1614 (bản dịch tiếng Việt)
+# Bài phỏng vấn Chủ tịch Park Hyeon Joo trên Hankyung Business
 
-Trang web tĩnh: bản dịch tiếng Việt Cover Story Hankyung Business số 1614 về Chủ tịch Tập đoàn Tài chính Mirae Asset Hyeon Joo Park, kèm thả tim và bình luận.
+Trang web tĩnh: bản dịch tiếng Việt Cover Story Hankyung Business số 1614 về Chủ tịch Tập đoàn Tài chính Mirae Asset Hyeon Joo Park.
 
 - `index.html` – trang chính
 - `pages/` – 12 trang tạp chí
