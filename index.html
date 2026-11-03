@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Người khai phá – Hankyung Business 1614</title>
+<meta name="description" content="Bản dịch tiếng Việt Cover Story Hankyung Business số 1614 về Chủ tịch Tập đoàn Tài chính Mirae Asset Hyeon Joo Park.">
+<meta property="og:title" content="Người khai phá – Góc nhìn của Hyeon Joo Park">
+<meta property="og:image" content="pages/p-01.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;800&family=Lora:ital,wght@0,500;0,600;1,500&display=swap">
+<style>
+/* Layout: a single reading column of magazine pages, a page index on top, a sticky reaction bar, comments at the end */
+:root {
+  --bg: #f3f1ee;
+  --paper: #ffffff;
+  --ink: #1d1a1b;
+  --muted: #6b6466;
+  --line: #e2ddd8;
+  --red: #e1262c;
+  --red-soft: #fde8e8;
+  --bar: rgba(255,255,255,.92);
+  --shadow: 0 1px 2px rgba(29,26,27,.08), 0 8px 24px rgba(29,26,27,.08);
+  --f-ui: "Be Vietnam Pro", "Segoe UI", system-ui, sans-serif;
+  --f-read: "Lora", Georgia, "Times New Roman", serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #161415; --paper: #221f20; --ink: #f2eeec; --muted: #a59d9f; --line: #393436;
+    --red: #ff4d52; --red-soft: #3a1c1e; --bar: rgba(34,31,32,.92);
+    --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.35);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #161415; --paper: #221f20; --ink: #f2eeec; --muted: #a59d9f; --line: #393436;
+  --red: #ff4d52; --red-soft: #3a1c1e; --bar: rgba(34,31,32,.92);
+  --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.35);
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+img { max-width: 100%; }
+[hidden] { display: none !important; }
+body {
+  background: var(--bg); color: var(--ink); font-family: var(--f-ui); font-size: 15px; line-height: 1.55;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+.wrap { max-width: 880px; margin: 0 auto; }
+
+header.mast { padding-block: 40px 20px; display: grid; gap: 10px; }
+.kicker { font-size: 12px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--red); }
+h1 { font-family: var(--f-ui); font-weight: 800; font-size: clamp(30px, 6vw, 48px); line-height: 1.08; margin: 0; text-wrap: balance; letter-spacing: -.01em; }
+h1 em { font-style: normal; color: var(--red); }
+.dek { font-family: var(--f-read); font-size: 17px; color: var(--muted); margin: 0; max-width: 62ch; }
+.meta { font-size: 13px; color: var(--muted); }
+
+nav.index { display: flex; gap: 8px; overflow-x: auto; padding-block: 12px 18px; scrollbar-width: thin; }
+nav.index a { flex: 0 0 auto; width: 64px; text-decoration: none; color: var(--muted); font-size: 11px; text-align: center; display: grid; gap: 4px; }
+nav.index img { width: 64px; height: 82px; object-fit: cover; object-position: top; border-radius: 3px; border: 1px solid var(--line); background: var(--paper); }
+nav.index a:hover img, nav.index a:focus-visible img { border-color: var(--red); }
+nav.index a:focus-visible { outline: 2px solid var(--red); outline-offset: 2px; border-radius: 4px; }
+
+.pages { display: grid; gap: 28px; padding-bottom: 12px; }
+figure.page { margin: 0; display: grid; gap: 8px; scroll-margin-top: 16px; }
+figure.page img { width: 100%; height: auto; display: block; background: var(--paper); box-shadow: var(--shadow); border-radius: 2px; }
+figure.page figcaption { display: flex; justify-content: space-between; gap: 12px; font-size: 12px; color: var(--muted); }
+figure.page figcaption b { font-weight: 600; color: var(--ink); }
+
+/* reaction bar */
+.react {
+  position: sticky; bottom: 0; z-index: 5; margin-top: 8px;
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+.react-inner {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap;
+  background: var(--bar); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--line); border-radius: 999px; padding: 8px 10px 8px 8px; margin-bottom: 14px; box-shadow: var(--shadow);
+}
+.heart {
+  display: inline-flex; align-items: center; gap: 8px; border: 1px solid var(--line); background: var(--paper); color: var(--ink);
+  font: 600 14px var(--f-ui); padding: 8px 16px 8px 12px; border-radius: 999px; cursor: pointer;
+}
+.heart svg { width: 20px; height: 20px; transition: transform .18s ease; }
+.heart svg path { fill: none; stroke: var(--red); stroke-width: 2; }
+.heart[aria-pressed="true"] { background: var(--red-soft); border-color: var(--red); }
+.heart[aria-pressed="true"] svg path { fill: var(--red); }
+.heart:active svg { transform: scale(1.25); }
+.heart:disabled { cursor: default; opacity: .6; }
+.heart:focus-visible, .btn:focus-visible, .golink:focus-visible { outline: 2px solid var(--red); outline-offset: 2px; }
+.count { font-variant-numeric: tabular-nums; }
+.golink { font-size: 14px; font-weight: 600; color: var(--ink); text-decoration: none; padding: 8px 12px; border-radius: 999px; }
+.golink:hover { color: var(--red); }
+
+/* comments */
+section.comments { background: var(--paper); border: 1px solid var(--line); border-radius: 10px; padding-block: 24px; padding-inline: clamp(16px, 4vw, 32px); margin-block: 8px 48px; display: grid; gap: 20px; scroll-margin-top: 16px; }
+section.comments h2 { margin: 0; font-size: 22px; font-weight: 800; }
+section.comments h2 span { color: var(--muted); font-weight: 500; font-size: 16px; }
+form { display: grid; gap: 10px; }
+label { font-size: 13px; font-weight: 600; }
+.field { display: grid; gap: 4px; }
+input, textarea {
+  font: 15px var(--f-ui); color: var(--ink); background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; width: 100%;
+}
+textarea { min-height: 96px; resize: vertical; font-family: var(--f-read); }
+input:focus, textarea:focus { outline: 2px solid var(--red); outline-offset: 0; border-color: transparent; }
+.row { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.btn { font: 600 14px var(--f-ui); background: var(--red); color: #fff; border: 0; border-radius: 8px; padding: 10px 18px; cursor: pointer; }
+.btn:disabled { opacity: .5; cursor: default; }
+.hint { font-size: 13px; color: var(--muted); }
+.status { font-size: 13px; color: var(--muted); min-height: 1.2em; }
+.status.err { color: var(--red); }
+ol.list { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; }
+ol.list li { display: grid; grid-template-columns: 36px 1fr; gap: 12px; padding-block: 14px; border-top: 1px solid var(--line); }
+.av { width: 36px; height: 36px; border-radius: 50%; display: grid; place-items: center; font-weight: 700; font-size: 14px; color: #fff; }
+.c-body { min-width: 0; display: grid; gap: 2px; }
+.c-head { display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; }
+.c-name { font-weight: 600; }
+.c-time { font-size: 12px; color: var(--muted); }
+.c-text { font-family: var(--f-read); font-size: 16px; white-space: pre-wrap; overflow-wrap: anywhere; margin: 0; }
+.c-del { justify-self: start; font: 12px var(--f-ui); color: var(--muted); background: none; border: 0; padding: 2px 0; cursor: pointer; text-decoration: underline; }
+.empty { color: var(--muted); font-size: 14px; padding-block: 8px; border-top: 1px solid var(--line); padding-top: 16px; }
+footer { font-size: 12px; color: var(--muted); padding-bottom: 32px; }
+@media (prefers-reduced-motion: reduce) { .heart svg { transition: none; } html { scroll-behavior: auto; } }
+html { scroll-behavior: smooth; }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header class="mast">
+    <div class="kicker">Hankyung Business · Số 1614 · 4–10/11/2026 · Bản dịch tiếng Việt</div>
+    <h1>Người khai phá: <em>Góc nhìn của Hyeon Joo Park</em></h1>
+    <p class="dek">Cover Story về Chủ tịch Tập đoàn Tài chính Mirae Asset: bài giảng tại Diễn đàn Hankyung Business Insight, hành trình đưa tài chính Hàn Quốc ra thế giới, và Thư tòa soạn “Gương mặt của sự nhẫn nại”.</p>
+    <div class="meta">12 trang · Kéo xuống để đọc, thả tim và để lại bình luận ở cuối trang</div>
+  </header>
+
+  <nav class="index" aria-label="Danh sách trang" id="index"></nav>
+
+  <main class="pages" id="pages"></main>
+
+  <div class="react" role="region" aria-label="Tương tác">
+    <div class="react-inner">
+      <button class="heart" id="heart" type="button" aria-pressed="false" disabled>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.2C1.4 8 3.5 4.5 7 4.5c2 0 3.6 1.1 5 3 1.4-1.9 3-3 5-3 3.5 0 5.6 3.5 4.3 6.8-1.8 4.6-9.3 9.2-9.3 9.2z"/></svg>
+        <span><span class="count" id="likeCount">–</span> lượt thả tim</span>
+      </button>
+      <a class="golink" href="#binh-luan">Bình luận (<span class="count" id="cmCount">0</span>)</a>
+    </div>
+  </div>
+
+  <section class="comments" id="binh-luan" aria-labelledby="cm-title">
+    <h2 id="cm-title">Bình luận <span id="cmCount2"></span></h2>
+    <form id="cmForm" novalidate>
+      <div class="field">
+        <label for="cmName">Tên của bạn</label>
+        <input id="cmName" name="name" maxlength="60" autocomplete="name" placeholder="Ví dụ: Nguyễn Văn A" required>
+      </div>
+      <div class="field">
+        <label for="cmText">Bình luận</label>
+        <textarea id="cmText" name="text" maxlength="1500" placeholder="Bạn nghĩ gì về góc nhìn của Chủ tịch Hyeon Joo Park?" required></textarea>
+      </div>
+      <div aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden">
+        <label for="cmWeb">Website</label><input id="cmWeb" tabindex="-1" autocomplete="off">
+      </div>
+      <div class="row">
+        <span class="hint" id="cmHint">Đang kết nối…</span>
+        <button class="btn" id="cmSend" type="submit" disabled>Gửi bình luận</button>
+      </div>
+      <div class="status" id="cmStatus" role="status" aria-live="polite"></div>
+    </form>
+    <ol class="list" id="cmList"></ol>
+    <div class="empty" id="cmEmpty">Chưa có bình luận nào. Hãy là người đầu tiên chia sẻ cảm nghĩ.</div>
+  </section>
+
+  <footer>Nguồn: Hankyung Business số 1614 (4–10/11/2026). Bản dịch tiếng Việt dùng cho mục đích tham khảo.</footer>
+</div>
+
+<script>
+(function () {
+  "use strict";
+  var PAGES = [
+    ["Bìa", "", "Bìa tạp chí Hankyung Business số 1614 với tít Người khai phá – Góc nhìn của Hyeon Joo Park"],
+    ["Thư tòa soạn", "Gương mặt của sự nhẫn nại", "Thư tòa soạn của Tổng biên tập Lee Hong-pyo"],
+    ["Cover Story I", "Trang 14", "Trang mở đầu Cover Story: hội trường diễn đàn"],
+    ["Cover Story I", "Trang 15", "Chủ tịch Hyeon Joo Park giảng bài, kèm đoạn dẫn nhập"],
+    ["Cover Story I", "Trang 16", "Bài chính: Hàn Quốc sẽ gia nhập top 5 cường quốc, góc nhìn 1 đến 3"],
+    ["Cover Story I", "Trang 17", "Bài chính, góc nhìn 4 đến 6"],
+    ["Cover Story I", "Trang 18", "Bài chính, góc nhìn 7 đến 9"],
+    ["Cover Story I", "Trang 19", "Bài chính, góc nhìn 10"],
+    ["Cover Story I", "Trang 20", "Bài 2: Sao tài chính lại không thể, kèm dấu mốc sự nghiệp"],
+    ["Cover Story I", "Trang 21", "Bài 2, phần tiếp theo"],
+    ["Cover Story II", "Trang 26", "Phóng sự ảnh tại diễn đàn"],
+    ["Cover Story II", "Trang 27", "Phóng sự ảnh tại diễn đàn, phần tiếp theo"]
+  ];
+  function pad(n) { return (n < 10 ? "0" : "") + n; }
+  var idx = document.getElementById("index"), main = document.getElementById("pages");
+  PAGES.forEach(function (p, i) {
+    var n = i + 1, src = "pages/p-" + pad(n) + ".jpg", id = "trang-" + n;
+    var a = document.createElement("a"); a.href = "#" + id;
+    var ti = document.createElement("img"); ti.src = src; ti.alt = ""; ti.loading = "lazy"; ti.decoding = "async";
+    var tl = document.createElement("span"); tl.textContent = n === 1 ? "Bìa" : String(n);
+    a.appendChild(ti); a.appendChild(tl); idx.appendChild(a);
+    var f = document.createElement("figure"); f.className = "page"; f.id = id;
+    var im = document.createElement("img"); im.src = src; im.alt = p[2]; im.width = 1300; im.height = n <= 2 ? 1684 : 1642;
+    if (n > 2) im.loading = "lazy";
+    im.decoding = "async";
+    var fc = document.createElement("figcaption");
+    var l = document.createElement("span"); var b = document.createElement("b"); b.textContent = p[0]; l.appendChild(b);
+    if (p[1]) l.appendChild(document.createTextNode(" · " + p[1]));
+    var r = document.createElement("span"); r.textContent = n + " / " + PAGES.length;
+    fc.appendChild(l); fc.appendChild(r);
+    f.appendChild(im); f.appendChild(fc); main.appendChild(f);
+  });
+
+  // ---------- shared reactions ----------
+  var heart = document.getElementById("heart"), likeCount = document.getElementById("likeCount");
+  var cmCount = document.getElementById("cmCount"), cmCount2 = document.getElementById("cmCount2");
+  var form = document.getElementById("cmForm"), nameEl = document.getElementById("cmName"), textEl = document.getElementById("cmText");
+  var send = document.getElementById("cmSend"), hint = document.getElementById("cmHint"), statusEl = document.getElementById("cmStatus");
+  var list = document.getElementById("cmList"), empty = document.getElementById("cmEmpty");
+  // ===== CẤU HÌNH: dán URL Web App của Google Apps Script vào đây =====
+  var API_URL = "";
+  // =====================================================================
+  var liked = false, busyLike = false, count = 0, loaded = false;
+  var COLORS = ["#c0392b", "#8e44ad", "#2c7a7b", "#b7791f", "#2b6cb0", "#6b46c1", "#2f855a", "#c05621"];
+
+  function store(k, v) { try { if (v === undefined) return localStorage.getItem(k); localStorage.setItem(k, v); } catch (e) { return null; } }
+  var clientId = store("hb1614-client");
+  if (!clientId) { clientId = "c" + Date.now().toString(36) + Math.random().toString(36).slice(2, 10); store("hb1614-client", clientId); }
+  liked = store("hb1614-liked") === "1";
+  var saved = store("hb1614-name"); if (saved) nameEl.value = saved;
+
+  function setStatus(msg, err) { statusEl.textContent = msg || ""; statusEl.className = "status" + (err ? " err" : ""); }
+  function fmtTime(t) {
+    try { return new Date(t).toLocaleString("vi-VN", { hour: "2-digit", minute: "2-digit", day: "2-digit", month: "2-digit", year: "numeric" }); }
+    catch (e) { return ""; }
+  }
+  function colorFor(s) { var h = 0; for (var i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) >>> 0; return COLORS[h % COLORS.length]; }
+  function initials(name) { var p = String(name).trim().split(/\s+/); return (p[p.length - 1] || "?").charAt(0).toUpperCase(); }
+  function readOnly(msg) { heart.disabled = true; send.disabled = true; nameEl.disabled = true; textEl.disabled = true; hint.textContent = msg; }
+  function paintHeart() { heart.setAttribute("aria-pressed", liked ? "true" : "false"); likeCount.textContent = loaded ? count : "–"; }
+
+  function renderComments(items) {
+    items = (items || []).slice().sort(function (a, b) { return (Number(b.at) || 0) - (Number(a.at) || 0); });
+    list.textContent = "";
+    items.forEach(function (it) {
+      var name = String(it.name || "Ẩn danh");
+      var li = document.createElement("li");
+      var av = document.createElement("div"); av.className = "av"; av.style.background = colorFor(name); av.textContent = initials(name); av.setAttribute("aria-hidden", "true");
+      var body = document.createElement("div"); body.className = "c-body";
+      var head = document.createElement("div"); head.className = "c-head";
+      var nm = document.createElement("span"); nm.className = "c-name"; nm.textContent = name;
+      var tm = document.createElement("span"); tm.className = "c-time"; tm.textContent = fmtTime(Number(it.at));
+      head.appendChild(nm); head.appendChild(tm);
+      var tx = document.createElement("p"); tx.className = "c-text"; tx.textContent = String(it.text || "");
+      body.appendChild(head); body.appendChild(tx);
+      li.appendChild(av); li.appendChild(body); list.appendChild(li);
+    });
+    cmCount.textContent = items.length; cmCount2.textContent = items.length ? "(" + items.length + ")" : "";
+    empty.hidden = items.length > 0;
+  }
+
+  function api(payload) {
+    return fetch(API_URL, { method: "POST", headers: { "Content-Type": "text/plain;charset=utf-8" }, body: JSON.stringify(payload) })
+      .then(function (r) { return r.json(); })
+      .then(function (j) { if (!j || j.ok !== true) throw new Error((j && j.error) || "error"); return j; });
+  }
+  function load() {
+    return fetch(API_URL + (API_URL.indexOf("?") < 0 ? "?" : "&") + "action=list&t=" + Date.now())
+      .then(function (r) { return r.json(); })
+      .then(function (j) {
+        if (!j || j.ok !== true) throw new Error("bad");
+        count = Number(j.likes) || 0; loaded = true; paintHeart(); renderComments(j.comments);
+      });
+  }
+
+  heart.addEventListener("click", function () {
+    if (busyLike) return;
+    busyLike = true; heart.disabled = true;
+    var next = !liked;
+    api({ action: "like", clientId: clientId, on: next }).then(function (j) {
+      liked = next; store("hb1614-liked", next ? "1" : "0");
+      count = Number(j.likes) || 0; loaded = true; paintHeart();
+    }).catch(function () { setStatus("Chưa thả tim được. Vui lòng thử lại.", true); })
+      .then(function () { busyLike = false; heart.disabled = false; });
+  });
+
+  form.addEventListener("submit", function (ev) {
+    ev.preventDefault();
+    var name = nameEl.value.trim(), text = textEl.value.trim();
+    var trap = document.getElementById("cmWeb");
+    if (trap && trap.value) return;
+    if (!name) { setStatus("Vui lòng nhập tên của bạn.", true); nameEl.focus(); return; }
+    if (!text) { setStatus("Vui lòng nhập nội dung bình luận.", true); textEl.focus(); return; }
+    var last = Number(store("hb1614-last")) || 0;
+    if (Date.now() - last < 20000) { setStatus("Bạn vừa gửi bình luận. Vui lòng đợi vài giây rồi gửi tiếp.", true); return; }
+    send.disabled = true; setStatus("Đang gửi…");
+    api({ action: "comment", clientId: clientId, name: name.slice(0, 60), text: text.slice(0, 1500) }).then(function (j) {
+      textEl.value = ""; store("hb1614-name", name); store("hb1614-last", String(Date.now()));
+      setStatus(j.pending ? "Đã gửi. Bình luận sẽ hiển thị sau khi được duyệt." : "Đã gửi bình luận.");
+      if (j.comments) renderComments(j.comments);
+    }).catch(function () { setStatus("Chưa gửi được bình luận. Vui lòng thử lại.", true); })
+      .then(function () { send.disabled = false; });
+  });
+
+  paintHeart();
+  if (!API_URL) {
+    readOnly("Chưa cấu hình nơi lưu tim và bình luận (API_URL trong index.html).");
+  } else {
+    var timer = setTimeout(function () { hint.textContent = "Đang tải bình luận chậm hơn bình thường…"; }, 8000);
+    load().then(function () {
+      clearTimeout(timer);
+      heart.disabled = false; send.disabled = false;
+      hint.textContent = "Tên và bình luận sẽ hiển thị công khai.";
+    }).catch(function () {
+      clearTimeout(timer);
+      hint.textContent = "Không tải được bình luận. Vui lòng tải lại trang sau.";
+      heart.disabled = false; send.disabled = false;
+    });
+  }
+})();
+</script>
+</body>
+</html>
